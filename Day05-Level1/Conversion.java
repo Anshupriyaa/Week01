@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Conversion {
-
+    // method to convert uppercase character to lowercase
     public static String convertToLowerChar(String text) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {
@@ -9,9 +9,9 @@ public class Conversion {
             if (c >= 'A' && c <= 'Z') {
                 c = (char) (c + 32); // Convert uppercase to lowercase
             }
-            result.append(c);
+            result.append(c);// append is used for adding character
         }
-        return result.toString();
+        return result.toString();//used toString to convert stringbuilder to string
     }
 
     public static boolean compareStrings(String text1, String text2) {

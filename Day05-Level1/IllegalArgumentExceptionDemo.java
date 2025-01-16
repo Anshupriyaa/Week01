@@ -19,10 +19,11 @@ public class IllegalArgumentExceptionDemo {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //Created scanner class for taking input form the user
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String userInput = scanner.next();
+        String userInput = sc.next();
 
         System.out.println("\nDemonstrating exception generation:");
         try {

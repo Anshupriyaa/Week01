@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class TextToUpperCase {
 
+    // method to convert lowercase to uppercase
     public static String convertToUpperUsingCharAt(String text) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {
@@ -11,7 +12,7 @@ public class TextToUpperCase {
             }
             result.append(c);
         }
-        return result.toString();
+        return result.toString();//used toString to convert stringBuilder to string
     }
 
     public static boolean compareStrings(String text1, String text2) {

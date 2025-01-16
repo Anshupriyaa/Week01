@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class StringToArray{
 	
-	//method to return substring of a string
+	//Created method named as returnCharacter to return all the characters
 	public static char[] returnCharacter (String str, char[] str1){
 	
-		//use for loop to iterate over the string
+		//used for loop for iterating over the string
 		for(int i = 0;  i < str.length(); i++){
 			str1[i] += str.charAt(i);
 		}
@@ -42,7 +42,7 @@ public class StringToArray{
 		returnCharacter(str, arrayFromMethod);
 		
 		
-		//initialize another array to store the result from built-in method
+		//initialize another array to store the result that we'll get from built-in method
 		char arrayFromBuiltIn[] = str.toCharArray();
 		
 		int length = str.length();

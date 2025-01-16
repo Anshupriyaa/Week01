@@ -17,13 +17,14 @@ public class Exception2 {
     }
 
     public static void main(String[] args) {
+        //Scanner class for taking input from the user
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String userInput = scanner.next();
 
         System.out.println("\nDemonstrating exception generation:");
         try {
-            generateException(userInput);
+            generateException(userInput);//method called
         } catch (StringIndexOutOfBoundsException e) {
             System.out.println("Caught a StringIndexOutOfBoundsException in main: " + e.getMessage());
         }

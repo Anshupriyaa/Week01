@@ -1,6 +1,6 @@
 public class NullPointerExceptionDemo {
 
-    // Method to generate NullPointerException
+    // Method to generate exception
     public static void generateException() {
         String text = null;
         // Attempting to call a method on a null object will generate NullPointerException
